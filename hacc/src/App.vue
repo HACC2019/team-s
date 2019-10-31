@@ -14,7 +14,7 @@ export default {
 </script>
 
 <style>
-#root, html, body {
+#root, html, body, .Page {
   width: 100%;
   height: 100%;
   margin: 0;

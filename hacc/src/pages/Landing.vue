@@ -70,6 +70,7 @@ export default {
 
   .Intro-Button {
     margin-right: 2rem;
+    background: linear-gradient(130deg, rgba(215,54,40,1) 26%, rgba(147,255,150,1) 100%);
   }
 
   h1 {

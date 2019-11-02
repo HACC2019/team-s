@@ -1,4 +1,5 @@
-import Landing from './pages/Landing.vue'
+//import Landing from './pages/Landing.vue'
+import Account from './pages/Account.vue'
 export default [
-    { path:'/', component: Landing}
+    { path:'/', component: Account}
 ]

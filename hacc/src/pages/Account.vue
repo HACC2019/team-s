@@ -31,7 +31,7 @@
 
 <style scoped>
 .blocky {
-    background-color: gray;
+    background-color: white;
     border: solid 1px black;
     border-radius: 25px;
     height:  50rem;

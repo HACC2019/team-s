@@ -9,9 +9,12 @@
        <div class="row">
 
             <div class="col s9 push-s2 blocky">
-               <div class="row">
-                    <div class="col s10 pull-s2"></div>
-                    <div class="col s2 push-s10 profileBlock">ssdssdd</div>
+               <div class="row blockyRow">
+                    <div class="col s1"></div>
+                    <div class="col s12 profileBlock"></div>
+                    <div class="col s1"></div> 
+                    <div class="col s12 profileBlock">ssdssdd</div>
+                    <div class="col s1"></div>
                </div>
             </div>
 
@@ -29,14 +32,23 @@
 <style scoped>
 .blocky {
     background-color: gray;
-    height:  50rem;
     border: solid 1px black;
     border-radius: 25px;
+    height:  50rem;
+    opacity: 0.1;
+}
+
+.blockyRow {
+    display: flex;
+    justify-content: center;
 }
 
 .profileBlock {
-    height: 30rem;
+    background-color: white;    
     border: solid 1px black;
     border-radius:  25px;
+    height: 44rem;
+    margin-bottom: 3rem;
+    margin-top: 3rem;    
 }
 </style>

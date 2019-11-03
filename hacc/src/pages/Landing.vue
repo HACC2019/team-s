@@ -1,55 +1,37 @@
 <template>
     <div class="Landing-Page Page">
-      <div class="Section valign-wrapper" id="Section-One">
+      <Page-Header />
+      <div class="valign-wrapper" id="Section-One">
         <div class="container Inner-Content-Container">
+          
           <div class="row">
-              <div class="col s12 m4 l6">
-                <h1>Dashloha</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut lacus neque, accumsan in placerat quis, sagittis nec enim. Nam at mi sit amet ex porttitor convallis ac eget diam.</p>
+              <div class="col s12" style="text-align:center;">
+                <h1 style="width:60%; margin:auto;"> Changing Aloha for good</h1>
+              </div>
+              
+              <div class="col s12">
+                <div class="Button-Container" style="margin:auto; width:auto; display:table; margin-top:2rem;">
+                  <a class="waves-effect waves-light btn-large Intro-Button">Sign Up</a>
+                </div>
               </div>
           </div>
 
-          <div class="row">
-            <div class="col s12 m6">
-              <a class="waves-effect waves-light btn Intro-Button">Sign Up</a>
-              <a class="waves-effect waves-light btn Intro-Button">Continue to Site</a>
-            </div>
-          </div>
         </div>
       </div>
 
       <!-- Section 2 -->
       <div class="Section container" id="Section-Two">
-
-        <div class="row Beginning-Headers">
-          <h3>How We help the community</h3>
-          <h5>Takes alot of people</h5>
-        </div>
-
-        <div class="Card-Container row">
-          <template v-for="items in cards">
-            <div class="col s3 m4 l4" :key="items.title">
-            <div class="card Info-Card">
-              <div class="card-image">
-                <img class="Card-Image" :src="require('@/Images/Temp.png')" alt="">
-              </div>
-              <div class="card-content">
-                <h3 class="flow-text">{{items.title}}</h3>
-                <p>{{items.text}}</p>
-              </div>
-            </div>
-          </div>
-          </template>
+        <div class="container Inner-Content-Container">
         </div>
       </div>
     </div>
 </template>
 
 <script>
-// import header from '../components/Header'
+import header from '../components/Header'
 export default {
     components: {
-        // 'Page-Header': header
+        'Page-Header': header
     },
     data() {
       return {
@@ -57,24 +39,42 @@ export default {
           {title:'Community Connect',text:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mollis vestibulum justo eget aliquam.'},
           {title:'Local Projections', text:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mollis vestibulum justo eget aliquam.'},
           {title: 'Visual Cues',text:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mollis vestibulum justo eget aliquam.'}
-        ]
+        ],
       }
     }
 }
 </script>
 
 <style scoped>
-  .Section {
+
+  .Landing-Page {
+    perspective: 1px;
+    transform-style: preserve-3d;
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+
+  #Section-One {
     height: 100%;
+    position: relative;
+    transform: translateZ(-1px) scale(2.1);
+    z-index: -1;
+  }
+
+
+  .Section {
+    height: 80%;
+    z-index: 1;
   }
 
   .Intro-Button {
     margin-right: 2rem;
-    background: linear-gradient(130deg, rgba(215,54,40,1) 26%, rgba(147,255,150,1) 100%);
+    background: linear-gradient(130deg, rgba(215,54,40,1) 26%,  100%);
   }
 
   h1 {
     font-size: 6rem;
+    color: #f6f6f6;
   }
 
   .Info-Card {
@@ -91,5 +91,13 @@ export default {
 
   .Beginning-Headers {
     text-align: right;
+  }
+
+  #Section-One {
+    background-color: #d7263b;
+  }
+
+  #Section-Two {
+    background-color: #9ae3d7;
   }
 </style>

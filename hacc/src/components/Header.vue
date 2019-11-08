@@ -3,10 +3,16 @@
     <a href="#" class="brand-logo" id="Header-Logo">Dashloha</a>
     <ul class="right hide-on-med-down">
       <li>
-        <a href="#">Community</a>
+        <a href="#">Support</a>
       </li>
       <li>
-        <a href="#">Neado</a>
+        <a href="#">Blog</a>
+      </li>
+      <li>
+        <a href="#">Sign Up Free</a>
+      </li>
+      <li>
+        <a href="#">Sign In</a>
       </li>
     </ul>
   </nav>

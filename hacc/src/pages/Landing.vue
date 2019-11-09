@@ -1,5 +1,6 @@
 <template>
     <div class="Landing-Page Page">
+      <Page-Header/>
       <div class="Section valign-wrapper" id="Section-One">
         <div class="container Inner-Content-Container">
           <div class="row">
@@ -42,6 +43,7 @@
           </template>
         </div>
       </div>
+      <Footer/>
     </div>
 </template>
 
@@ -64,10 +66,13 @@
 
 
 <script>
-// import header from '../components/Header'
+import header from '../components/Header'
+import footer from '../components/Footer'
 export default {
     components: {
-        // 'Page-Header': header
+        'Page-Header': header,
+        'Footer': footer
+
     },
     data() {
       return {

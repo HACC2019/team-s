@@ -125,6 +125,11 @@ Mauris eget sagittis nunc. Vivamus nec rhoncus lacus, sed malesuada velit. Phase
     </div>
 </template>
 
+
+
+
+<!-- NEED TO BUY DOMAIN NAME  -->
+<!-- Hotjar Tracking Code for www.dashloha.com -->
 <script>
 import header from '../components/Header'
 export default {

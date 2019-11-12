@@ -1,5 +1,6 @@
 <template>
     <div class="Landing-Page Page">
+      <Page-Header/>
       <div class="Section valign-wrapper" id="Section-One">
         <div class="container Inner-Content-Container">
           <div class="row">
@@ -42,14 +43,36 @@
           </template>
         </div>
       </div>
+      <Footer/>
     </div>
 </template>
 
+
+
+
+<!-- NEED TO BUY DOMAIN NAME  -->
+<!-- Hotjar Tracking Code for www.dashloha.com -->
 <script>
-// import header from '../components/Header'
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:1555168,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+
+
+
+<script>
+import header from '../components/Header'
+import footer from '../components/Footer'
 export default {
     components: {
-        // 'Page-Header': header
+        'Page-Header': header,
+        'Footer': footer
+
     },
     data() {
       return {

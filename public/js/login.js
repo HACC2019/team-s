@@ -12,6 +12,8 @@ function checkInputs() {
         return true;
     }
 }
+
+//this is the sign in button function
 signInBTN.addEventListener("click", () => {
     if (checkInputs()) {
         console.log('yeet');

@@ -12,8 +12,9 @@ let modelContent = `
         <a href="index.html" class="modal-close waves-effect waves-green btn-flat">GO BACK</a>
     </div>
 </div>
-
 `
+
+//git test push
 $('.sidenav').sidenav({
   menuWidth: 300, // Default is 300
   edge: 'left', // Choose the horizontal origin

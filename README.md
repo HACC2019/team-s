@@ -1,8 +1,10 @@
+
 # hacc2019
-https://alohadash.me (PROJECT LINK)
+![alt text](https://cdn.discordapp.com/attachments/622355729751212033/643860546130673664/Screen_Shot_2019-11-12_at_7.11.51_AM.png)
+https://alohadash.me
 ## FOR ICS 491 Special Topics
-https://alohadash.me (PROJECT LINK)
-Jeraldy Cascayan 
+Hey, Jeraldy here!
+I will be updating our project after the hacc. We're trying to generate daily active users right now
 ### Aloha Dashboard
 
 

@@ -5,9 +5,6 @@
 https://alohadash.me (LIVE PROJECT LINK) <br>
 Hey, Jeraldy here!
 I will be updating our project after the hacc. We're trying to generate daily active users right now
-### Aloha Dashboard
-
-
 ### Purpose
 Due to the problem of multiple communities not having a place to put their sustainable actions that help our environment. We want to help create a centralized place where communities can get recognized, possible gain incentives, and can see places that require help.
 ## Mission 

@@ -1,6 +1,10 @@
 # hacc2019
-## team-s
+https://alohadash.me (PROJECT LINK)
+## FOR ICS 491 Special Topics
+https://alohadash.me (PROJECT LINK)
+Jeraldy Cascayan 
 ### Aloha Dashboard
+
 
 ### Purpose
 Due to the problem of multiple communities not having a place to put their sustainable actions that help our environment. We want to help create a centralized place where communities can get recognized, possible gain incentives, and can see places that require help.

@@ -1,0 +1,274 @@
+.social-media-icon {
+    margin-top:25px;
+    width:auto;
+    height:18px;
+}
+
+
+#bgBubble {
+    position:absolute;
+    height:100px;
+    z-index:-5;
+    right:0;
+}
+
+.notePic {
+    margin-top:35%;
+    height:100%;
+    width:100%;
+    z-index:-4;
+}
+
+.noculateLogo {
+    width:200px;
+}
+
+
+.bulletNote {
+    line-height:70% !important;
+}
+
+.bullet {
+    width:50px;
+}
+
+.noCreditCard {
+    margin-bottom:10px;
+    width:75%;
+}
+.bubble {
+    transform: scaleY(1);
+    z-index:-5;
+    position:absolute;
+    right:0px;
+}
+
+.bubbleB {
+    top:1176px;
+}
+
+#section1 {
+    margin-bottom:50px !important;
+}
+
+.platformSection {
+    position: relative;
+    height:100%;
+    margin-bottom:190px;
+}
+
+.tryNOW_section {
+    height:600px;
+}
+
+
+.statement {
+    color:#3c3c3c !important;
+    padding-bottom:30px !important;
+    margin-bottom:0 !important;
+}
+
+.bullet {
+    width:60px !important;
+}
+
+
+.bulletedPoint {
+    margin-left:-5%;
+    margin-bottom:0 !important;
+}
+
+.statement {
+    margin-left:2% !important;
+    font-weight:900;
+    font-family: 'merriweatherbold'
+}
+
+.noCreditCard {
+    font-family: 'merriweatherbold';
+    font-size: 1.8rem !important;
+    margin-top:5%;
+    margin-left:5%;
+}
+.infoCredit {
+    font-weight:900;
+    font-size: 1.4rem !important;
+    color:grey;
+}
+.signUpBtn {
+    font-weight:900;
+    margin-left:5%;
+}
+
+#intro {
+    color:#3c3c3c;
+}
+
+#section2 {
+    margin-bottom:90px;
+}
+
+.infoBox {
+    color:#fff !important;
+    margin-left:20% !important;
+    font-size:21px;
+    padding-bottom:25%;
+}
+
+.infoLOGO {
+    margin-left: 5px;
+}
+
+.meetNoculateTxt {
+    font-size:1rem;
+    font-family:'merriweatherbold'
+}
+
+#noteculateInfo {
+    position:relative;
+    font-family: 'merriweatherbold';
+}
+
+#noteculateInfo2 {
+    position:relative;
+    font-family: 'merriweatherbold';
+    margin-left:45%;
+    margin-top:20%;
+}
+
+.noteMan {
+    position:absolute;
+    bottom:-65px;
+    z-index:1;
+
+}
+
+.platformPreview {
+    width:100%;
+}
+
+#section4 {
+    z-index:-5;
+    margin-bottom:50px;
+}
+
+
+.centerText {
+    text-align: center;
+}
+
+
+#platformImg {
+    margin-top:7%;
+    margin-bottom:7%;
+    text-align:center;
+    display:flex !important;
+    justify-content: center !important;
+}
+
+.LastSection {
+    height:105%;
+    margin-bottom:5% !important;
+    margin-top:33% !important;
+}
+
+.signUpBtnBottom {
+    display:flex !important;
+    justify-content: center !important;
+}
+
+#btnBtm {
+    display:flex !important;
+    justify-content: center !important;
+}
+
+
+.typeWrite {
+    color:#3c3c3c !important;
+}
+
+
+@keyframes typing { from { width: 0; } }
+@keyframes blink-caret { 50% { border-color: transparent; } }
+@-webkit-keyframes typing { from { width: 0; } }
+@-webkit-keyframes blink-caret { 50% { border-color: transparent; } }
+
+#blockQuotePar {
+    padding:25px;
+    font-size:1.3rem;
+    height:120%;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.noteTitle {
+    text-align: center;
+    padding:0 !important;
+    font-weight:600 !important;
+}x
+
+.cardSize {
+    margin:35px;
+    width:300px;
+    height:450px;
+}
+
+.registerNowTxt {
+    font-weight:200;
+    color:grey;
+    margin-bottom:7%;
+}
+
+.schoolTxt {
+    font-weight:600;
+}
+
+#actualImgPlatform {
+    width:40%;
+    height:40%
+}
+
+.missionDriven {
+    color:grey;
+    margin-bottom:4%;
+    font-weight:600;
+    font-size:24px;
+}
+
+
+.believeStatement {
+    font-weight:600;
+}
+
+
+.card-content {
+    text-align: center;
+}
+
+#TypingContainer {
+    width:300px;
+    height:25em;
+}
+
+.WhatWeDo {
+    padding-bottom:1% !important;
+    line-height:normal;
+}
+
+#schoolListImg {
+    width:100%;
+}
+
+.lowkeyDiss {
+    font-family: 'arial';
+    margin-top:0 !important;
+    padding-bottom: 0 !important;
+    font-weight:600;
+}
+
+#footerContainer {
+    background-color: #351431 !important;
+}
+
+#ToS {
+    padding:10%;
+}

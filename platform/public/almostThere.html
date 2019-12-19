@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- CSS Materialize-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+
+    <!-- Custom CSS-->
+    <link href="css/login.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="css/index.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="css/stylesheet.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Almost There!</title>
+
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/6.5.0/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/6.5.0/firebase-auth.js"></script>
+    <script defer src="/__/firebase/6.5.0/firebase-database.js"></script>
+    <script defer src="/__/firebase/6.5.0/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/6.5.0/firebase-storage.js"></script>
+    <!-- initialize the SDK after all desired features are loaded -->
+    <script defer src="/__/firebase/init.js"></script>
+    <script defer src="./js/finalSignUp.js"></script>
+    <script defer src="./js/firebaseConfig.js"></script>
+
+    <style media="screen">
+        body {
+            background: #ffffff;
+            color: rgba(0, 0, 0, 0.87);
+            font-family: Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        #message {
+            background: white;
+            max-width: 360px;
+            margin: 100px auto 16px;
+            padding: 32px 24px;
+            border-radius: 3px;
+        }
+
+        #message h2 {
+            color: #ffa100;
+            font-weight: bold;
+            font-size: 16px;
+            margin: 0 0 8px;
+        }
+
+        #message h1 {
+            font-size: 22px;
+            font-weight: 300;
+            color: rgba(0, 0, 0, 0.6);
+            margin: 0 0 16px;
+        }
+
+        #message p {
+            line-height: 140%;
+            margin: 16px 0 24px;
+            font-size: 14px;
+        }
+
+        #message a {
+            display: block;
+            text-align: center;
+            background: #039be5;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: white;
+            padding: 16px;
+            border-radius: 4px;
+        }
+
+        #message,
+        #message a {
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+        }
+
+        #load {
+            color: rgba(0, 0, 0, 0.4);
+            text-align: center;
+            font-size: 13px;
+        }
+    </style>
+</head>
+
+<body>
+
+    </div>
+    <div class="navbar-fixed">
+        <nav class="light-white lighten-1" role="navigation">
+            <div class="nav-wrapper container"><a id="logo-container" href="./index.html" class="brand-logo center"><img
+                        class="noculateLogo" src="./resc/icons/noteculateLOGO.png"></a>
+                <ul class="right hide-on-med-and-down">
+                </ul>
+
+                <ul id="nav-mobile" class="sidenav">
+                    <li><a href="#">Navbar Link</a></li>
+                </ul>
+                <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            </div>
+        </nav>
+    </div>
+    <div id="sectionLogin" class="section no-pad-bot" id="index-banner">
+        <div class="row">
+            <div class="col s6">
+                <div id="almostThereSection" class="container">
+                    <div id="loginGrabber">
+                        <h4>You're almost there!</h4>
+                        <h6>Set a secure password for signing in to noculate and accessing the platform's notes.</h6>
+                    </div>
+
+                    <div class="row">
+                        <form class="col s12">
+                            <div class="row">
+                                <div class="input-field col s12">
+
+
+                                    <input id="passForm" type="password" placeholder="Set up your password"
+                                        id="password" type="text" class="validate">
+                                    <label for="password">Password</label>
+                                    <!--
+                                    <p>
+                                        <label>
+                                            <input type="checkbox" />
+                                            <span>8 to 50 characters long</a></span>
+                                        </label>
+                                    </p>
+                                    <p>
+                                        <label>
+                                            <input type="checkbox" />
+                                            <span>One special character</a></span>
+                                        </label>
+                                    </p>
+
+                                    <p>
+                                        <label>
+                                            <input type="checkbox" />
+                                            <span>One uppercase character</a></span>
+                                        </label>
+                                    </p>
+
+                                    <p>
+                                        <label>
+                                            <input type="checkbox" />
+                                            <span>One lowercase character</a></span>
+                                        </label>
+                                    </p>
+                                    -->
+                                </div>
+                            </div>
+                            <p>
+                            </p>
+                    </div>
+
+                    <a id="signUPNOW" href="#"
+                        class="signUpBtn firstButton waves-effect waves-light btn-large red darken-2">Join Now</a>
+                    </form>
+
+                </div>
+            </div>
+
+            <div class="col s6">
+                <img id="hikeman" src="resc/assets/hikerman.png">
+            </div>
+        </div>
+
+
+    </div>
+    </div>
+
+    <footer class="page-footer orange">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">The noteculate team</h5>
+                    <p class="grey-text text-lighten-4">We are a team of college students working on this project like
+                        it's our
+                        full time job. Any amount would help support and continue development on this project and is
+                        greatly
+                        appreciated.</p>
+
+
+                </div>
+                <div class="col l3 s12">
+                    <h5 class="white-text">Company</h5>
+                    <ul>
+                        <li><a class="white-text" href="#!">Founders</a></li>
+                        <li><a class="white-text" href="#!">Blog</a></li>
+                        <li><a class="white-text" href="#!">Markdown Theory</a></li>
+                    </ul>
+                </div>
+                <div class="col l3 s12">
+                    <h5 class="white-text">Connect</h5>
+                    <ul>
+                        <li><a class="white-text" href="#!">Instagram</a></li>
+                        <li><a class="white-text" href="#!">Twitter</a></li>
+                        <li><a class="white-text" href="#!">Youtube</a></li>
+                        <li><a class="white-text" href="#!">Email Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-copyright">
+            <div class="container">
+                Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">jeraldy</a>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/init.js"></script>
+    <script src="js/openToS.js"></script>
+
+
+        <!-- Hotjar Tracking Code for https://www.noculate.me/ -->
+        <script>
+                (function (h, o, t, j, a, r) {
+                    h.hj = h.hj || function () {
+                        (h.hj.q = h.hj.q || []).push(arguments)
+                    };
+                    h._hjSettings = {
+                        hjid: 1474143,
+                        hjsv: 6
+                    };
+                    a = o.getElementsByTagName('head')[0];
+                    r = o.createElement('script');
+                    r.async = 1;
+                    r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+                    a.appendChild(r);
+                })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+            </script>
+</body>
+
+</html>

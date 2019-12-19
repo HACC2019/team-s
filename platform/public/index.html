@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- CSS Materialize-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+
+
+  <!-- Custom CSS-->
+  <link href="css/index.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="css/stylesheet.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to Alohadash</title>
+
+  <!-- update the version number as needed -->
+  <script defer src="/__/firebase/6.5.0/firebase-app.js"></script>
+  <!-- include only the Firebase features as you need -->
+  <script defer src="/__/firebase/6.5.0/firebase-auth.js"></script>
+  <script defer src="/__/firebase/6.5.0/firebase-database.js"></script>
+  <script defer src="/__/firebase/6.5.0/firebase-messaging.js"></script>
+  <script defer src="/__/firebase/6.5.0/firebase-storage.js"></script>
+  <!-- initialize the SDK after all desired features are loaded -->
+  <script defer src="/__/firebase/init.js"></script>
+
+  <style media="screen">
+    body {
+      background: #ffffff;
+      color: rgba(0, 0, 0, 0.87);
+      font-family: Roboto, Helvetica, Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    #message {
+      background: white;
+      max-width: 360px;
+      margin: 100px auto 16px;
+      padding: 32px 24px;
+      border-radius: 3px;
+    }
+
+    #message h2 {
+      color: #ffa100;
+      font-weight: bold;
+      font-size: 16px;
+      margin: 0 0 8px;
+    }
+
+    #message h1 {
+      font-size: 22px;
+      font-weight: 300;
+      color: rgba(0, 0, 0, 0.6);
+      margin: 0 0 16px;
+    }
+
+    #message p {
+      line-height: 140%;
+      margin: 16px 0 24px;
+      font-size: 14px;
+    }
+
+    #message a {
+      display: block;
+      text-align: center;
+      background: #039be5;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: white;
+      padding: 16px;
+      border-radius: 4px;
+    }
+
+    #message,
+    #message a {
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    }
+
+    #load {
+      color: rgba(0, 0, 0, 0.4);
+      text-align: center;
+      font-size: 13px;
+    }
+  </style>
+</head>
+
+<body>
+
+
+  <!--
+  <div id="flatDesignArt">
+    <div id="bgBubbleTop">
+      <img class="bubble" src="resc/assets/bubbleTop.png">
+    </div>
+
+
+    <div id="bgBubbleBottom">
+      <img class="bubble bubbleB" src="resc/assets/bubbleBottom.png">
+    </div>
+
+
+        -->
+  </div>
+  <div class="navbar-fixed">
+    <nav class="light-white lighten-1" role="navigation">
+      <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo"><img class="noculateLogo"
+            src="./resc/icons/noteculateLOGO.png"></a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="#">Support</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="./signup.html" class="waves-effect waves-light btn-small blue darken-2">Sign Up Free</a></li>
+          <li><a href="./login.html" class="buttonOutline waves-effect waves-teal btn-flat">Sign In</a>
+          <li>
+          <li><a href="http://instagram.com/noculate"><img class="social-media-icon"
+                src="./resc/icons/instagram.png"></a></li>
+          <li><a href="https://twitter.com/noculate"><img class="social-media-icon" src="./resc/icons/twitter.png"></a>
+          </li>
+        </ul>
+
+        <ul id="nav-mobile" class="sidenav">
+          <li><a href="#">Navbar Link</a></li>
+        </ul>
+        <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      </div>
+    </nav>
+  </div>
+  <div id="section1" class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <br>
+      <div id="intro">
+        <div class="row">
+          <div class="col m7">
+            <div id="TypingContainer">
+              <div class="row valign-wrapper bulletedPoint">
+                <img class="bullet col m2" src="resc/assets/bulletPoint.png">
+                <h1 class="statement col m10 bulletNote">
+                  <!-- fix format, add header, add sexy font cursive -->
+                  <a href="" class="typewrite" data-period="2000" data-type='[ "Sexy", "Clean", "Intuitive" ]'>
+                    <span class="wrap"></span>
+                  </a>
+                </h1>
+
+              </div>
+              <div class="row valign-wrapper bulletedPoint">
+                <img class="bullet col m2" src="resc/assets/bulletPoint.png">
+                <h1 class="statement col m10 bulletNote">
+                  <a href="" class="typewrite" data-period="2000" data-type='[ "Powerful", "Open", "Intelligent" ]'>
+                    <span class="wrap"></span>
+                  </a>
+                </h1>
+
+              </div>
+
+              <div class="row valign-wrapper bulletedPoint">
+                <img class="bullet col m2" src="resc/assets/bulletPoint.png">
+                <h1 class="animationType statement col m10 bulletNote">notes.</h1>
+              </div>
+            </div>
+
+
+            <h6 class="noCreditCard"> We offer a crowdsourcing platform just for notetaking. Upload and view thousands
+              of
+              uploaded notes by students, free of charge.</h6>
+            <br>
+            <a href="signup.html" class="signUpBtn waves-effect waves-light btn-large red darken-2">Sign up for
+              free</a>
+            <h6 class="noCreditCard infoCredit">credit card not required. We're a team of broke students who know how
+              it
+              feels.</h6>
+          </div>
+
+
+          <div class="col m5">
+            <div class="valign-wrapper">
+              <img class="notePic" src="resc/assets/headIcon.png">
+            </div>
+            <!--
+            <img class="notePic" src="resc/assets/headIcon.png">
+            -->
+          </div>
+        </div>
+
+
+        <div class="row">
+          <div class="col m9">
+
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+  </div>
+  <!--
+      <div class="row center">
+        <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+      </div>
+      -->
+  <br><br>
+
+  </div>
+  </div>
+
+
+
+  <div id="section2" class="container section no-pad-bot">
+
+    <div id="noteculateInfo">
+      <div class="row">
+        <div class="infoLOGO col m4">
+          <div class="noteculateR">
+            <h1 class="WhatWeDo statement">No more paid student services.</h1>
+            <h8 class="lowkeyDiss black-text">We're talking to you Chegg, Coursehero, Vitalsource, and all the paywall
+              student services.</h8>
+            <h5 class="missionDriven">we are designed to be free, now and always.</h5>
+
+          </div>
+        </div>
+
+        <div class="col m8">
+
+          <blockquote id="blockQuotePar" class="meetNoculateTxt black-text">
+            Noculate is a free notesharing platform where
+            students can contribute, share, and view notes that they or other students have created. Missed a lecture? Missing crucial
+            points? Or you couldn't understand what the heck the professor was talking about? No problem,
+            Noculate has your back! Simply create an account or log in, and you'll be able to access your classmates
+            notes and create discussion threads based on those notes - no more asking for your classmates notes at
+            midnight before the big exam. Not convinced of its credibility? Noculate automatically compares similar
+            notes in order to match the validity of lecture information. The best part? It's all free! Sign up today and
+            follow our social medias to receive updates about our application.
+          </blockquote>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--
+  <div id="section3" class="section no-pad-bot">
+
+    <div id="noteculateInfo2">
+      <div class="row">
+        <div class="infoLOGO col m4">
+          <div class="noteculateR">
+          </div>
+        </div>
+
+        <div class="infoBox col m4">
+          <img class="noteMan" src="./resc/assets/girlLaptop.png">
+
+        </div>
+      -->
+  </div>
+  </div>
+  </div>
+
+
+  <!-- Add this later
+  <div id="section4" class="section no-pad-bot">
+    <div class="row">
+      <div class="infoLOGO col m10">
+        <img src="resc/assets/productPreview.png">
+      </div>
+      <div class="aboutBox col m2">
+        <h4 class="centerText">Here's how it works</h4>
+        <br>
+        <h4>Create</h4>
+        <h4>Upload</h4>
+        <h4>Share</h4>
+        <h4>Exam Mode</h4>
+        <a href="./signup.html" class="signUpBtn waves-effect waves-light btn-large red darken-2">Test out now free</a>
+      </div>
+    </div>
+  </div>
+  </div>
+-->
+
+
+
+  <div class="container">
+    <div class="section">
+
+      <!--   Icon Section   -->
+      <div class="row">
+        <div class="col m4">
+          <div class="card cardSize">
+            <div class="card-image">
+              <img src="./resc/assets/abstract-co-workers.png">
+            </div>
+            <div class="card-content">
+              <p class="noteTitle black-text card-title">Intuitive UI</p>
+              <p>We think about user experience first. Our platform is designed to be user friendly. View and search
+                notes intuitively with our well-thought intelligent UI design.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col m4">
+          <div class="card cardSize">
+            <div class="card-image">
+              <img src="./resc/assets/friendship.png">
+            </div>
+            <div class="card-content">
+              <p class="noteTitle black-text card-title">Community-Driven</p>
+              <p>Our platform finds the missing piece of notetaking. We open hundreds of uploaded student-made notes. Contribute by uploading all your old notes now and get paid!</p>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col m4">
+          <div class="card cardSize">
+            <div class="card-image">
+              <img src="./resc/assets/abstract-list-is-empty.png">
+            </div>
+            <div class="card-content">
+              <p class="noteTitle black-text card-title">Smart Match</p>
+              <p>Noculate is tailored to the user's experience. We make sure we match your courses with hundreds of notes already taken by previous students. Understand your courses now.
+              
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+    </div>
+    <br>
+
+
+
+
+
+    <div class="section platformSection">
+      <h4 class="schoolTxt centerText">our platform provides notes from...</h4>
+      <div id="platformImg">
+        <img id="schoolListImg" src="./resc/assets/supportedCourses.png">
+      </div>
+      <h6 class="registerNowTxt centerText">Want your school listed? Register now and upload your school's notes!</h6>
+      <div id="btnBtm">
+        <a href="signup.html"
+          class="signUpBtnBottom centerText waves-effect waves-light btn-large red darken-2">Circulate with Noculate</a>
+      </div>
+    </div>
+
+
+    <!--
+    <div class="LastSection platformSection">
+      <h3 class="believeStatement centerText">We believe that learning is a journey</h3>
+      <div id="platformImg">
+        <img id="actualImgPlatform" src="./resc/assets/world.png">
+      </div>
+      <h4 class="missionDriven centerText">let's guide you to the right direction.</h4>
+      <div id="btnBtm">
+        <a href="signup.html"
+          class="signUpBtnBottom centerText waves-effect waves-light btn-large red darken-2">Circulate with noculate</a>
+      </div>
+      -->
+  </div>
+  </div>
+
+  <footer id="footerContainer" class="page-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">The noteculate team</h5>
+          <p class="grey-text text-lighten-4">We are a team of UH Manoa college students working on this project like
+            it's our
+            full time job. Any amount would help support and continue development on this project and is greatly
+            appreciated.</p>
+
+
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Company</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Founders</a></li>
+            <li><a class="white-text" href="#!">Blog</a></li>
+            <li><a class="white-text" href="#!">Markdown Theory</a></li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Connect</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Instagram</a></li>
+            <li><a class="white-text" href="#!">Twitter</a></li>
+            <li><a class="white-text" href="#!">Youtube</a></li>
+            <li><a class="white-text" href="#!">Email Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-copyright">
+      <div class="container">
+        Made by <a class="orange-text text-lighten-3" href="#">jeraldy</a>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/indexApp.js"></script>
+
+  <!--
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+      // // The Firebase SDK is initialized and available here!
+      //
+      // firebase.auth().onAuthStateChanged(user => { });
+      // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
+      // firebase.messaging().requestPermission().then(() => { });
+      // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
+      //
+      // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+
+
+
+
+
+      try {
+        let app = firebase.app();
+        let features = ['auth', 'database', 'messaging', 'storage'].filter(feature => typeof app[feature] ===
+          'function');
+        document.getElementById('load').innerHTML = `Firebase SDK loaded with ${features.join(', ')}`;
+      } catch (e) {
+        console.error(e);
+        document.getElementById('load').innerHTML = 'Error loading the Firebase SDK, check the console.';
+      }
+    });
+  </script>
+
+   -->
+
+
+
+  <!-- Hotjar Tracking Code for https://www.noculate.me/ -->
+  <script>
+    (function (h, o, t, j, a, r) {
+      h.hj = h.hj || function () {
+        (h.hj.q = h.hj.q || []).push(arguments)
+      };
+      h._hjSettings = {
+        hjid: 1474143,
+        hjsv: 6
+      };
+      a = o.getElementsByTagName('head')[0];
+      r = o.createElement('script');
+      r.async = 1;
+      r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+      a.appendChild(r);
+    })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+  </script>
+</body>
+
+</html>

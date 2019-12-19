@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="../css/materialize.css">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js" />
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+
+    <title>Homepage</title>
+    <link type="text/css" rel="stylesheet" href="../css/adminPage.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="../css/animate.css" media="screen,projection" />
+
+
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/6.5.0/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/6.5.0/firebase-auth.js"></script>
+    <script defer src="/__/firebase/6.5.0/firebase-database.js"></script>
+    <script defer src="/__/firebase/6.5.0/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/6.5.0/firebase-storage.js"></script>
+    <!-- initialize the SDK after all desired features are loaded -->
+    <script defer src="/__/firebase/init.js"></script>
+    <script defer src="../js/firebaseConfig.js"></script>
+    <script defer src="../js/noculatePlat.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <div id="container">
+
+        <!-- Modal Trigger -->
+        <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>
+
+        <!-- Modal Structure -->
+        <div id="modal1" class="modal">
+            <div class="modal-content">
+                <img id="kittens" src="../resc/assets/ginger-cat-working-remotely.png">
+                <h4 id="modalTitle">Hey, you caught us before we are finish!</h4>
+                <p id="modalPar">From everyone in the noculate team, thank you from coming this far! We are not exactly
+                    finish with our platform just yet. A team of dedicated kittens are coding very hard to get the site
+                    working just for you. So please, stay tune! We are expecting to launch a functional version in the
+                    next following week. We will keep you updated through email! Thank you! For now, get your notes
+                    ready! Uploading notes will earn you money.</p>
+            </div>
+            <div class="modal-footer">
+                <a id="signoutBtn" class="waves-effect waves-light btn">Sign out</a>
+            </div>
+        </div>
+        <div class="row">
+
+            <div class="col s12 m4 l3">
+
+                <div id="slideing">
+                    <ul id="slide-out" class="sideWith sidenav sidenav-fixed">
+                        <div id="side">
+                            <li>
+                                <div class="user-view">
+                                    <div class="background">
+                                    </div>
+                                    <a href="noculatePlatform.html"><img class="circle"
+                                            src="../resc/icons/noteculateLOGO.png"></a>
+                                    <a href=" #name">Welcome back, <span id="emailName" class="name"></span></a>
+                                </div>
+                            </li>
+                            <li class="active"><a href="./noculatePlatform.html"><i
+                                        class="material-icons">dashboard</i>Explore</a>
+                            </li>
+                            <li>
+                                <div class="divider"></div>
+                            </li>
+                            <li><a class="subheader">Applications</a></li>
+                            <li><a href="./yourNotes.html"><i class="material-icons">face</i>Notes</a></li>
+                            <li><a href="./circulate.html"><i class="material-icons">email</i>Circulate</a></li>
+                            <li><a href="./library.html"><i class="material-icons">archive</i>Library</a></li>
+                            <li><a href="#"><i class="material-icons">assessment</i>Exam Mode</a></li>
+                            <li>
+                                <div class="divider"></div>
+                            </li>
+                            <li><a class="subheader">Accounts</a></li>
+                            <li><a href="./account.html"><i class="material-icons">settings</i>My Account</a></li>
+                            <li><a href="#!"><i class="material-icons">people</i>Share</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col s12 m8 l9">
+
+            </div>
+        </div>
+
+
+
+
+        <div id="colorHeader">
+        </div>
+        <div id="content" class="container">
+            <div id="colorHeader">
+            </div>
+            <div id="content" class="container">
+                <div id="navRow" class="row" style="margin: 0.5rem">
+                </div>
+                <div id="icons" class="col s2">
+                    <a href=""><label class="label-icon"><i
+                                class="clickable material-icons icon-white">fullscreen</i></label></a>
+                    <label class="label-icon"><i
+                            class="clickable material-icons icon-white">notifications_none</i></label>
+                    <a href=""><label class="label-icon"><i
+                                class="clickable material-icons icon-white">settings</i></label></a>
+                </div>
+            </div>
+
+
+
+            <div id="topRow" class="row" style="margin: 1.5rem;">
+                <div class="row">
+                    <div class="col l5">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="../resc/assets/hikerman.png">
+                                <span class="card-title black-text">Launch Blog!</span>
+                            </div>
+                            <div class="card-content">
+                                <p>Welcome to noculate! We are as excited as you are! Check out our story here!</p>
+                            </div>
+                            <div class="card-action">
+                                <a href="#">GOTO BLOG</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col l7">
+                        <div class="row">
+                            <div class="col m6">
+                                <div class="columnLectures">
+
+                                    <div class="row">
+                                        <div class="col m3">
+                                            <img class="headerNote" src="../resc/assets/hikerman.png">
+                                        </div>
+
+                                        <div class="col m9">
+                                            <p class="smallHeaderTitle">Nalukai Academy</p>
+                                            <p class="smallHeaderTitle smallAuthorTitle">Jeraldy Cascayan</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col m3">
+                                            <img class="headerNote" src="../resc/assets/hikerman.png">
+                                        </div>
+
+                                        <div class="col m9">
+                                            <p class="smallHeaderTitle">Anthropology 101</p>
+                                            <p class="smallHeaderTitle smallAuthorTitle">Jeraldy Cascayan</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col m3">
+                                            <img class="headerNote" src="../resc/assets/hikerman.png">
+                                        </div>
+
+                                        <div class="col m9">
+                                            <p class="smallHeaderTitle">ICS 111</p>
+                                            <p class="smallHeaderTitle smallAuthorTitle">Jeraldy Cascayan</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col m6">
+                                <div class="row">
+                                    <div class="col s12">
+                                        <img class="headerNote1" src="../resc/assets/hikerman.png">
+                                    </div>
+
+                                    <div class="col s9">
+                                        <h6>Ethnic Studies</h6>
+                                        <p class="smallAuthorTitle">Jeraldy Cascayan</p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="divider"></div>
+
+                    <div class="missCard">
+                        <h5>Never miss a lecture</h5>
+                        <h6>Sign up for Noteculate's Daily Notes and get the best of notes, tailored for you.</h6>
+                        <div class="row">
+                            <div class="input-field col s4">
+                                <input id="email" type="email" class="validate">
+                                <label for="email">Email</label>
+                                <a class="waves-effect waves-light btn">Get Notes Now.</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="divider"></div>
+                <div class="row">
+                    <div class="col l7">
+                        <div class="row">
+                            <div class="col m6">
+                                <div class="columnLectures">
+
+                                    <div class="row">
+                                        <div class="col m3">
+                                            <img class="headerNote" src="../resc/assets/hikerman.png">
+                                            <a href=" #name"><span class="name">Welcome to noteculate</span></a>
+                                            <a id="emailField" href="#email"><span class="email">test</span></a>
+                                        </div>
+
+                                        <div class="col m9">
+                                            <p class="smallHeaderTitle">Nalukai Academy</p>
+                                            <p class="smallHeaderTitle smallAuthorTitle">Jeraldy Cascayan</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col m3">
+                                            <img class="headerNote" src="../resc/assets/hikerman.png">
+                                        </div>
+
+                                        <div class="col m9">
+                                            <p class="smallHeaderTitle">Anthropology 101</p>
+                                            <p class="smallHeaderTitle smallAuthorTitle">Jeraldy Cascayan</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col m3">
+                                            <img class="headerNote" src="../resc/assets/hikerman.png">
+                                        </div>
+
+                                        <div class="col m9">
+                                            <p class="smallHeaderTitle">ICS 111</p>
+                                            <p class="smallHeaderTitle smallAuthorTitle">Jeraldy Cascayan</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col m6">
+                                <div class="row">
+                                    <div class="col s12">
+                                        <img class="headerNote1" src="../resc/assets/hikerman.png">
+                                    </div>
+
+                                    <div class="col s9">
+                                        <h6>Ethnic Studies</h6>
+                                        <p class="smallAuthorTitle">Jeraldy Cascayan</p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+
+                    <div class="col l5">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="../resc/assets/hikerman.png">
+                                <span class="card-title black-text">Earn money with noculate!</span>
+                            </div>
+                            <div class="card-content">
+                                <p>Upload and share to thousands of students worldwide! You earn money based on note
+                                    views!</p>
+                            </div>
+                            <div class="card-action">
+                                <a href="#">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    </div>
+
+    <script defer type="text/javascript" src="../js/materialize.js"></script>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+
+
+</body>
+
+<script>
+    console.log('ooof');
+    $(document).ready(function () {
+        $('#modal1').modal({
+            dismissible: false
+        });
+        $('#modal1').modal('open');
+
+    });
+</script>
+
+<!-- Hotjar Tracking Code for https://www.noculate.me/ -->
+    <script>
+        (function (h, o, t, j, a, r) {
+            h.hj = h.hj || function () {
+                (h.hj.q = h.hj.q || []).push(arguments)
+            };
+            h._hjSettings = {
+                hjid: 1474143,
+                hjsv: 6
+            };
+            a = o.getElementsByTagName('head')[0];
+            r = o.createElement('script');
+            r.async = 1;
+            r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+    </script>
+
+</html>

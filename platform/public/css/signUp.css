@@ -1,0 +1,28 @@
+#loginContainer {
+    margin-top:5%;
+    width:70%;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+#partyIllus {
+    margin-top:8%;
+    width: 100% !important;
+    transform:scale(1.5);
+}
+
+.inputFieldForm {
+    width:100%;
+}
+
+#googleBtn {
+    font-size:0.9em;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}

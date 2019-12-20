@@ -1,0 +1,46 @@
+#sectionLogin {
+    height:650px;
+    margin-bottom:650px !important;
+}
+
+
+#loginGrabber {
+    margin-bottom:6%;
+}
+
+#illArt {
+    position: absolute;
+    right:-9%;
+    top:27%;
+}
+
+.firstButton {
+    margin-bottom:4%;
+}
+
+.signUpGoogle {
+    margin-top:4%;
+    font-size:0.8rem;
+    width:50% !important;
+}
+
+
+#googleContaner {
+    display:flex;
+    justify-content: center;
+}
+
+.noteViewContainer {
+    width:730px !important;
+}
+
+
+.googleSignUpBTN {
+    width:80%;
+}
+
+
+#hikeman {
+    width:100%;
+    margin-top:20%;
+}

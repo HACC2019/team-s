@@ -2,7 +2,8 @@
 # hacc2019
 ![alt text](https://cdn.discordapp.com/attachments/622355729751212033/643860546130673664/Screen_Shot_2019-11-12_at_7.11.51_AM.png)
 ## FOR ICS 491 Special Topics
-https://alohadash.me (LIVE PROJECT LINK) <br> 
+https://alohadash.me (NOT PORTED/PRODUCTION CODE) <br> 
+https://governdash.web.app/ (PROTOTYPE) WORKING
 Hey, Jeraldy here!
 I will be updating our project after the hacc. We're trying to generate daily active users right now.
 

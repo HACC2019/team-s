@@ -35,6 +35,8 @@ I will be updating our project after the hacc. We're trying to generate daily ac
 
 ### Coastline App
 Coastline App is an award-winning hackathon app (Hack4theSEA) and an ISEF (International Science Engineering Fair) Computer Science - Machine Learning Nominee Idea designed for volunteering work. Our team decided to reuse our past code (Java ANDROID prototype) and idea, to revise it in a way that's tailored for Alohadash, our Data-Driven Platform that's built to collect sustainable data through our little platform community. The Idea is rather simple. What if there's a way to process and classify images in a way that helps volunteering work? (e.g take a picture of riddled trash in Hawaii and classifies the object, it's geolocation, type of material, time and day) and develops a smart analytic dashboard for registered compananies to see what kind of trash Hawaii si dealing with and how it's affecting the environment around it. The idea is founded by community-driven data and state of the art Neural Network for classificaiton and object detection through smartphone cameras. This is an idea is built through 3 years of ideating and tinkering, and we are highly excited to integrate coastline app in a way that connects eco-friendly idea within communites in Hawaii. 
+#### App Screenshot
+![App FRONT](https://cdn.discordapp.com/attachments/511085034095116291/658825887516721229/Screen_Shot_2019-12-23_at_2.18.27_PM.png)
 
 
 ### Purpose

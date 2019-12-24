@@ -38,6 +38,14 @@ Coastline App is an award-winning hackathon app (Hack4theSEA) and an ISEF (Inter
 #### App Screenshot
 ![App FRONT](https://cdn.discordapp.com/attachments/511085034095116291/658825887516721229/Screen_Shot_2019-12-23_at_2.18.27_PM.png)
 
+#### Theory
+![NEURAL NET ARCHITECTURE](https://cdn.discordapp.com/attachments/511085034095116291/658828065799012363/Screen_Shot_2019-12-23_at_2.27.06_PM.png)
+#### Architecture
+We use convulational neural nets to help classify objects and predict the type of trash. It runs through a 125x125 Input Layer and compresses it down through ReLU activation function along with ADAM gradient descent for batch learning. We trained our network with the most 30 common objects found in Hawaii that could be potential trash and hurtful for the environment along side with a standard CNN model for better prediction. Our next goal is to create a neural network that identifies the company belonging the object, for better data accuracy.
+
+### Description
+A machine learning object classifying app that is meant to identify trash. Once the object is identified, the user can push it up to the website I developed and it will mark its geolocation with the image and a few details the user wants to put. The map on the website uses a heat map, which in this case means that if there are more trash submissions near that area the the color of the heat map will denote how severe the trash population is in that particular area. This not only allows people to know where they can help pick up trash, but it also gives great statistical data for environmental organizations and the government. This is helpful for volunteering analysis and data collection, allowing fast and intuitive volunteering trash process for the user and our API.
+
 
 ### Purpose
 Due to the problem of multiple communities not having a place to put their sustainable actions that help our environment. We want to help create a centralized place where communities can get recognized, possible gain incentives, and can see places that require help.
